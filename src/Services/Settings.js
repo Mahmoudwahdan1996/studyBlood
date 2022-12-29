@@ -4,11 +4,12 @@ import axios from "axios";
 
 // new
 
-const devInstance = createInstance(
-    "https://emary.azq1.com/StudyBlood/Dashboard/api/"
-);
+// const devInstance = createInstance(
+//     "https://emary.azq1.com/StudyBlood/Dashboard/api/"
+// );
+const devInstance = createInstance("https://studyblood.com/Dashboard/api");
 const productionInstance = createInstance(
-    "https://emary.azq1.com/StudyBlood/Dashboard/api/"
+    "https://studyblood.com/Dashboard/api"
 );
 
 function createInstance(baseURL) {
@@ -60,3 +61,4 @@ axios.interceptors.response.use(
         return Promise.reject(error);
     }
 );
+
