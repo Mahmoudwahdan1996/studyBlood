@@ -1,0 +1,183 @@
+// ======== start signUp ===========
+.Signup {
+  .navbar {
+    box-shadow: none;
+
+    .navbar__btns,
+    .navbar__links {
+      display: none;
+    }
+  }
+
+  .signup__box {
+    box-shadow: 0px 0px 24px #ff4d001a;
+    padding: 30px 40px 12px;
+    margin: 35px 0;
+    background-color: $white;
+
+    form {
+      .form_back {
+        margin-bottom: 22px;
+        color: #c2bebe;
+        text-transform: capitalize;
+        font-size: 16px;
+        display: flex;
+        gap: 5px;
+      }
+
+      .form_head {
+        margin-bottom: 16px;
+
+        h4 {
+          display: flex;
+          gap: 8px;
+          font-size: 35px;
+          margin-bottom: 17px;
+          font-family: "Calibri-Bold";
+          text-transform: uppercase;
+
+          span {
+            color: $black;
+
+            &.up_word {
+              color: $mainColor;
+            }
+          }
+        }
+
+        p {
+          font-family: "Calibri-Regular";
+          text-transform: capitalize;
+          span {
+            &.login {
+              color: $mainColor;
+              cursor: pointer;
+              text-decoration: underline;
+              font-family: "Calibri-Bold";
+            }
+          }
+        }
+      }
+
+      .form-group {
+        label {
+          margin-bottom: 10px;
+        }
+        input {
+          border: 1px solid #c2bebe;
+          border-radius: 5px;
+          margin-bottom: 16px;
+          height: 48px;
+        }
+
+        button {
+          margin-top: 53px;
+          margin-bottom: 18px;
+          width: auto;
+        }
+
+        .eye {
+          position: absolute;
+          top: 56%;
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  &.login_page {
+    .remember_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+    .check_box {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: 10px;
+      label {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    input[type="checkbox"] {
+      width: 22px;
+      height: 22px;
+      background: #c9c9c9 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      margin-bottom: 0 !important;
+      accent-color: dimgrey;
+    }
+
+    .remember_me {
+      color: $mainColor;
+      font-family: "Calibri-Bold";
+      text-decoration: underline;
+      a {
+        color: $mainColor;
+      }
+    }
+
+    button {
+      margin-top: 20px !important;
+    }
+
+    .create {
+      color: $mainColor;
+      text-decoration: underline;
+      font-size: 20px;
+      font-family: "Calibri-Bold";
+      text-align: center;
+      margin-bottom: 95px;
+    }
+  }
+
+  &.forget_password {
+    .signup__box {
+      margin-bottom: 160px;
+      margin-top: 120px;
+    }
+  }
+
+  &.passCode {
+    .pass_numbers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .num {
+        width: 50px;
+        height: 48px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #c2bebe;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #606060;
+        text-transform: capitalize;
+        padding: 0;
+        text-align: center;
+
+        &:focus {
+          border: 1px solid #ff7400;
+        }
+      }
+    }
+
+    button {
+      width: 110px !important;
+      margin: 25px 0 !important;
+    }
+
+    .resend {
+      text-decoration: underline !important;
+      font-family: "Calibri-Regular";
+      color: $black;
+    }
+  }
+}
+// ======== end signUp =============

@@ -1,0 +1,78 @@
+// ============ start topics =======
+
+.topics {
+    margin: 80px 0;
+    h2 {
+        margin-bottom: 34px;
+    }
+
+    .topics__box {
+        background: $white;
+        transition: 0.5s;
+        margin-bottom: 35px;
+        min-height: 410px;
+
+        .image {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            transition: 0.5s;
+            img {
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+            }
+        }
+
+        .topics__box--info {
+            text-align: left;
+            padding: 16px;
+
+            h3 {
+                font-size: 18px;
+                font-family: "Poppins-SemiBold";
+                margin: 24px 0 16px 0;
+                color: $secondColor;
+            }
+
+            p {
+                color: $secondColor;
+                line-height: 1.8;
+                padding-bottom: 24px;
+            }
+
+            .box__btns {
+                display: flex;
+                gap: 23px;
+                padding-bottom: 25px;
+                margin: 30px 0 0;
+                width: auto;
+
+                .second--btn {
+                    // width: 135px;
+                    width: auto;
+                }
+
+                .main--btn {
+                    width: auto;
+                    // width: 200px;
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 26px #ff4d0029;
+            .image {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+
+            h3 {
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+// ============ end topics =========

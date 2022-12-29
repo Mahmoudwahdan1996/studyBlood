@@ -1,0 +1,149 @@
+// ================== start exams ============
+
+.examsPage {
+    .answer_submit {
+        margin: 0 20px;
+    }
+    .head_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #787878 0% 0% no-repeat padding-box;
+        border: 1px solid #dddddd;
+        border-radius: 5px 5px 0px 0px;
+        padding: 11px 19px;
+        color: #fff;
+
+        .previous {
+            height: 31px;
+            // border: 1px solid #dddddd;
+            border-radius: 5px;
+            font-family: "Calibri-Regular";
+            background-color: $mainColor;
+            border: none;
+            // background: transparent;
+            color: #fff;
+            gap: 4px;
+            width: auto;
+        }
+
+        .next {
+            background-color: $mainColor;
+            border: none;
+            font-family: "Calibri-Regular";
+        }
+    }
+
+    .question_name {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        padding: 20px;
+        align-items: baseline;
+        margin: 20px;
+        p {
+            width: 70%;
+            font-size: 16px !important;
+        }
+        .table-responsive {
+            width: 30%;
+
+            table {
+                text-align: center;
+                tr {
+                    background: #ffe2c9 0% 0% no-repeat padding-box;
+                    border: 1px solid #ffae8b;
+                    border-radius: 5px 5px 0px 0px;
+                }
+
+                td {
+                    background: #ffe2c9 0% 0% no-repeat padding-box;
+                    border: 1px solid #ffae8b;
+                    border-radius: 5px 5px 0px 0px;
+                    width: 50%;
+                    padding: 3px 0 !important;
+                }
+            }
+        }
+    }
+
+    .ranges {
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        background-color: $white;
+        margin-bottom: 30px;
+
+        .all_ranges {
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        h4 {
+            background: #787878 0% 0% no-repeat padding-box;
+            border: 1px solid #dddddd;
+            border-radius: 5px 5px 0px 0px;
+            padding: 16px;
+            text-align: center;
+            color: #fff;
+            gap: 10px;
+            font-size: 20px;
+            font-family: "Calibri-Bold";
+            span {
+            }
+            img {
+            }
+        }
+
+        .range_box {
+            padding: 13px;
+            .box_item {
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 15px;
+                h5 {
+                    font-family: "Calibri-Bold";
+                }
+                p {
+                }
+            }
+        }
+    }
+
+    .score_table {
+        .row_head {
+            background: #787878 0% 0% no-repeat padding-box;
+            border: 1px solid #dddddd;
+            border-radius: 5px 5px 0px 0px;
+            color: #fff;
+            font-size: 20px;
+            font-family: "Calibri-Bold";
+
+            .cell_icon {
+                gap: 5px;
+            }
+        }
+        tbody {
+            background-color: $white;
+
+            td {
+                padding: 3px 0;
+            }
+
+            .quest_number {
+                font-family: "Calibri-Regular";
+            }
+
+            .correct {
+                color: #13a009;
+            }
+
+            .wrong {
+                color: #ff0000;
+            }
+        }
+    }
+}
+
+// ================== end exams ==============

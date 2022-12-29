@@ -1,0 +1,63 @@
+// ============== start score =======
+.score {
+  margin: 75px 0;
+  .head {
+    font-size: 26px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    font-family: "Calibri-Bold";
+    display: flex;
+    gap: 8px;
+
+    .result {
+      color: $mainColor;
+    }
+  }
+
+  .score_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: #f0f0f0 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 13px 40px;
+    margin-bottom: 16px;
+
+    &:nth-child(even) {
+      background-color: transparent;
+    }
+
+    .content {
+      h5 {
+        color: #000000;
+        text-transform: capitalize;
+        font-family: "Calibri-Bold";
+      }
+
+      p {
+        font-family: "Calibri-Regular";
+      }
+    }
+
+    .icons {
+      display: flex;
+      gap: 35px;
+      .close {
+        font-size: 23px;
+        color: #ff0000;
+      }
+
+      .correct {
+        color: #13a009;
+      }
+
+      a {
+        color: #000000;
+        text-transform: capitalize;
+        font-family: "Calibri-Bold";
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+// ============== end score =========

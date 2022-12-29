@@ -1,0 +1,69 @@
+// ================= start work ===========
+.work {
+    position: relative;
+    overflow: hidden;
+
+    .ray {
+        position: absolute;
+        top: 12%;
+        right: 0;
+        z-index: -1;
+    }
+
+    .work_content_head {
+        h4 {
+            margin-top: 70px;
+            margin-bottom: 32px;
+        }
+
+        p {
+        }
+    }
+
+    .work_list {
+        &.work_last {
+        }
+        h4 {
+            margin: 50px 0 32px;
+        }
+
+        ul {
+            margin-inline-start: 20px;
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                gap: 8px;
+                margin-bottom: 17px;
+
+                span.desc {
+                    p {
+                        position: relative;
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            left: -22px;
+                            top: 9px;
+                            width: 12px;
+                            max-width: 12px;
+                            min-width: 12px;
+                            height: 12px;
+                            background: #c2bebe;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                span {
+                    color: #343434;
+                    &.dot {
+                    }
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 70px;
+        }
+    }
+}
+// ================= end work =============

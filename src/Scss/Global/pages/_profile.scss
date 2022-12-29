@@ -1,0 +1,146 @@
+// ============== start profile ===========
+.profile {
+  margin: 35px 0 85px;
+  .tabs {
+    .col-auto {
+      width: 29%;
+      max-width: 29%;
+      flex: 29%;
+      padding: 0;
+      min-height: 474px;
+      background: #787878;
+      border-radius: 5px;
+
+      .nav-link {
+        padding: 12px 0;
+        text-align: center;
+        color: $white;
+        font-size: 18px;
+        font-family: "Calibri-Bold";
+
+        &.active {
+          background: #ffffff;
+          border-radius: 5px;
+          color: $black;
+        }
+      }
+    }
+
+    .tab-content {
+      height: auto;
+
+      border-radius: 5px;
+      padding: 0;
+      margin-inline-start: 13px;
+      width: 68%;
+      max-width: 68%;
+      flex: 68%;
+
+      .timed_test {
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #dddddd;
+        .head {
+          background: #787878;
+          padding: 18px 65px 15px;
+          color: #fff;
+          font-size: 18px;
+          border-radius: 5px;
+          font-family: "Calibri-Bold";
+          text-transform: capitalize;
+        }
+      }
+
+      .table-responsive {
+        padding: 30px 63px 30px 55px;
+
+        table {
+          border: 1px solid #dddddd;
+          border-radius: 5px;
+          text-align: center;
+          min-width: 650px;
+
+          th {
+            color: $mainColor;
+            font-size: 18px;
+            font-family: "Calibri-Bold";
+          }
+
+          th,
+          td {
+            border: none;
+            padding: 13px 0;
+            font-family: "Calibri-Regular";
+            width: 25%;
+            border-inline-end: 1px solid #ddd;
+          }
+
+          .btns {
+            gap: 22px;
+
+            button {
+              width: 102px;
+              height: 33px;
+            }
+
+            .review {
+              background: #343434;
+              color: #fff;
+              border: none;
+              box-shadow: none;
+              transition: 0.5s;
+
+              &:hover {
+                box-shadow: inset 6.5em 0 0 0 #fff;
+                color: $black;
+                // background: $white;
+              }
+            }
+
+            .continue {
+            }
+          }
+        }
+      }
+
+      .box_info {
+        background: #ffffff;
+        width: 60%;
+        padding: 38px 55px 32px 30px;
+        box-shadow: 0px 0px 24px #ff4d001a;
+        form {
+          h4 {
+            font-family: "Calibri-Bold";
+            font-size: 25px;
+            margin-bottom: 32px;
+
+            span {
+              &.word {
+                color: $mainColor;
+              }
+            }
+          }
+
+          .form-group {
+            input {
+              border: 1px solid #c2bebe;
+              border-radius: 5px;
+              margin-bottom: 16px;
+              height: 48px;
+            }
+            button {
+              margin-top: 16px;
+              width: 110px;
+            }
+
+            .eye {
+              position: absolute;
+              top: 46px;
+              right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ============== end profile =============

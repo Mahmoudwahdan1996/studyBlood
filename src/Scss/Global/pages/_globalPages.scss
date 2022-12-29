@@ -1,0 +1,335 @@
+/*====================== start global page ======================================*/
+
+// poppins font
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(@/assets/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(@/assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(@/assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(@/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(@/assets/fonts/Poppins-SemiBold.ttf);
+}
+
+// calibri font
+
+@font-face {
+  font-family: "Calibri-Bold";
+  src: url(@/assets/fonts/Calibri_Bold.TTF);
+}
+
+@font-face {
+  font-family: "Calibri-Italic";
+  src: url(@/assets/fonts/Calibri_Italic.ttf);
+}
+
+@font-face {
+  font-family: "Calibri-Bold-Italic";
+  src: url(@/assets/fonts/Calibri_Bold_Italic.ttf);
+}
+
+@font-face {
+  font-family: "Calibri-Light";
+  src: url(@/assets/fonts/Calibri_Light.ttf);
+}
+
+@font-face {
+  font-family: "Calibri-Light-Italic";
+  src: url(@/assets/fonts/Calibri_Light_Italic.ttf);
+}
+
+@font-face {
+  font-family: "Calibri-Regular";
+  src: url(@/assets/fonts/Calibri_Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar,
+.profile .tabs .tab-content .table-responsive::-webkit-scrollbar,
+.all_ranges::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-responsive::-webkit-scrollbar {
+  height: 7px;
+}
+
+body::-webkit-scrollbar-track,
+.profile .tabs .tab-content .table-responsive::-webkit-scrollbar-track,
+.table-responsive::-webkit-scrollbar-track,
+.all_ranges::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+body::-webkit-scrollbar-thumb,
+.profile .tabs .tab-content .table-responsive::-webkit-scrollbar-thumb,
+.table-responsive::-webkit-scrollbar-thumb,
+.all_ranges::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #606060;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  border-radius: 1rem;
+}
+
+body {
+  font-family: "Calibri-Light";
+  direction: ltr;
+  text-align: left;
+  font-size: 16px;
+  background: #fdf6f0;
+  color: #343434;
+  // height: 7000px;
+}
+
+.text-ellipsis {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.text-ellipsis-1{
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.text-ellipsis-2 {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+section {
+  overflow: hidden !important;
+}
+
+.owl-carousel {
+  direction: ltr !important;
+}
+
+.slick-slider {
+  direction: ltr;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  text-transform: lowercase;
+  line-height: 1.8;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.number {
+  font-family: "Calibri-Bold";
+}
+
+.center-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  font-family: "Calibri-Regular";
+  color: $black;
+  margin-bottom: 10px;
+  padding-inline-start: 2px;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 15px 22px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  border: 1px solid $mainColor !important;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.form_tel {
+  height: 55px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+
+  .vti__dropdown-list.below {
+    // width: 526px !important;
+    top: 53px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vti__dropdown {
+    background: none;
+    position: unset;
+  }
+
+  .vue-tel-input {
+    border: none !important;
+    box-shadow: none;
+    position: relative;
+  }
+
+  input.vti__input {
+    height: 100%;
+    margin-bottom: 0 !important;
+    border: none !important;
+  }
+}
+
+.side_bar_content {
+  button {
+    width: auto;
+  }
+
+  button.close {
+    background: none;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0;
+  }
+
+  .info {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+      li {
+        a {
+          color: #000;
+          font-size: 18px;
+          font-family: "Calibri-Regular";
+          transition: 0.5s;
+
+          &:hover {
+            margin-right: 10px;
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.swal2-styled.swal2-confirm {
+  width: 70px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.error_validate {
+  display: block;
+  color: #ff4d00;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+@for $i from 1 through 10 {
+  .mt-#{$i}0 {
+    margin-top: #{$i}0px;
+  }
+  .mb-#{$i}0 {
+    margin-bottom: #{$i}0px;
+  }
+}
+
+/*====================== end global page ======================================*/

@@ -1,0 +1,68 @@
+// ========== start contact page ============
+.contact {
+  position: relative;
+  margin: 70px 0;
+
+  .ray {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 748px;
+    height: 646px;
+  }
+  h3 {
+    display: flex;
+    gap: 10px;
+    span {
+      color: $black;
+      &.word {
+        color: $mainColor !important;
+      }
+    }
+    margin-bottom: 32px;
+  }
+
+  p {
+    padding-bottom: 33px;
+  }
+
+  form {
+    box-shadow: 0px 0px 24px #ff4d001a;
+    background: #ffffff;
+    padding: 53px 75px 50px 35px;
+
+    h4 {
+      margin-bottom: 32px;
+      font-size: 24px;
+      color: $mainColor;
+      font-family: "Calibri-Bold";
+    }
+
+    .form-group {
+      label {
+        margin-bottom: 10px;
+      }
+      input,
+      textarea {
+        border: 1px solid #c2bebe;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        height: 48px;
+      }
+
+      textarea {
+        height: 97px;
+        resize: none;
+      }
+
+      button {
+        margin-top: 53px;
+        margin-bottom: 18px;
+        width: auto;
+        width: 126px;
+      }
+    }
+  }
+}
+// ========== contact contact page ==========

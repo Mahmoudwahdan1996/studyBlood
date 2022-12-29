@@ -1,0 +1,127 @@
+// =========== start payment =========
+.payment {
+  margin-top: 42px;
+  margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+
+  .ray {
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 0;
+    left: 0;
+    width: 864px;
+    height: 747px;
+    z-index: -1;
+  }
+  .form_back {
+    margin-bottom: 32px;
+    color: #c2bebe;
+    text-transform: capitalize;
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+  }
+
+  .packages__payment .head {
+    margin-bottom: 50px !important;
+  }
+
+  .pay {
+    width: 100%;
+    padding: 30px 57px 30px 40px;
+
+    h3 {
+      font-family: "Calibri-Bold";
+      font-size: 35px;
+      margin-bottom: 32px;
+      color: $black;
+
+      .cardWord {
+        color: $mainColor;
+      }
+    }
+
+    .form-group {
+      label {
+        font-family: "Calibri-Regular";
+        margin-bottom: 10px;
+      }
+
+      input {
+        border: 1px solid #c2bebe;
+        border-radius: 5px;
+        height: 48px;
+        margin-bottom: 16px;
+      }
+
+      .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        position: absolute;
+        right: 20px;
+        top: 46px;
+
+        img {
+          width: 35px;
+          height: 25px;
+        }
+      }
+
+      button {
+        margin: 32px 0;
+      }
+
+      .vs--searchable .vs__dropdown-toggle {
+        cursor: pointer !important;
+      }
+
+      .vs__search {
+        border: none;
+        margin: 0;
+      }
+      .vs__selected-options {
+        align-items: center;
+      }
+
+      .vs__selected {
+        font-family: "Calibri-Bold";
+        height: 30px;
+        gap: 10px;
+      }
+
+      .no-margin {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .payment__package {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 24px #ff4d001a;
+    padding: 36px 65px 36px 40px;
+    span {
+      font-size: 20px;
+      font-family: "Calibri-Bold";
+      color: $mainColor;
+    }
+
+    h4 {
+      margin: 16px 0;
+      font-size: 20px;
+      font-family: "Calibri-Bold";
+    }
+    .advantage {
+      display: flex;
+      gap: 32px;
+      span {
+        font-size: 16px !important;
+        font-family: "Calibri-Regular";
+        color: $black;
+      }
+    }
+  }
+}
+// =========== end payment ===========

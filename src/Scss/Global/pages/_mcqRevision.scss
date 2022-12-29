@@ -1,0 +1,327 @@
+// ============= start mcqRevision ============
+
+.mcqRevision {
+    margin: 50px 0 80px;
+
+    h2 {
+        color: #000000;
+        text-transform: uppercase;
+        font-size: 35px;
+        margin-bottom: 32px;
+        font-family: "Calibri-Bold";
+    }
+
+    .all_questions {
+        button.main--btn {
+            width: auto;
+            gap: 15px;
+            height: 50px;
+        }
+        .tabs {
+            .nav-tabs {
+                border: none;
+
+                .nav-link {
+                    padding: 12px 34px;
+                    color: $black;
+                    background: $white;
+                    border: 1px solid #ebebeb;
+                    border-radius: 0px 5px 5px 0px;
+                    font-size: 18px;
+                    font-family: "Calibri-Bold";
+
+                    &.active {
+                        color: $white;
+                        background-color: $mainColor;
+                    }
+                }
+            }
+        }
+
+        .question__tab {
+            > p {
+                padding: 32px 0 36px 0;
+                font-size: 20px;
+                color: #606060;
+                font-family: "Calibri-Regular";
+            }
+
+            .tab_two-cat {
+                .info {
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    font-family: "Calibri-Bold";
+                    color: $black;
+
+                    &.info_bottom {
+                        color: $mainColor;
+                        padding-top: 80px;
+                    }
+                }
+
+                .info_checkboxes {
+                    h3 {
+                        font-size: 18px !important;
+                        font-family: "Calibri-Regular" !important;
+                    }
+                }
+
+                .timed_table {
+                    &.table {
+                        border: 1px solid #c2bebe;
+                        border-radius: 5px;
+                        min-width: 600px;
+
+                        tr {
+                            th {
+                                background: #dddddd;
+                                font-size: 18px;
+                                text-transform: capitalize;
+                                font-family: "Calibri-Bold";
+                                padding: 7px 0;
+                            }
+                            td {
+                                background: #fff;
+                                padding: 25px 10px;
+                                color: #343434;
+
+                                .last_cell {
+                                    align-items: baseline !important;
+                                    gap: 20px;
+                                    span {
+                                        &.continue {
+                                            color: $mainColor;
+                                            text-decoration: underline;
+                                            font-family: "Calibri-Regular";
+                                            cursor:pointer;
+                                            // opacity: 0.3;
+                                        }
+                                        &.review {
+                                            color: $black;
+                                            text-decoration: underline;
+                                            font-family: "Calibri-Regular";
+                                            opacity: 0.3;
+                                        }
+                                    }
+
+                                    .dot {
+                                        width: 10px;
+                                        min-width: 10px;
+                                        height: 10px;
+                                        border-radius: 50%;
+                                        background: #ddd;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .question__tab--categories {
+                .info_checkboxes {
+                    border: 1px solid #dddddd;
+                    border-radius: 5px;
+                    padding-bottom: 25px;
+                    margin-bottom: 50px;
+                    &.half_width {
+                        width: 60%;
+
+                        h3 {
+                            font-family: "Calibri-Regular";
+                        }
+                    }
+
+                    input[type="text"] {
+                        height: 45px;
+                    }
+
+                    .v-select,
+                    input[type="text"] {
+                        width: 97%;
+                        margin: auto;
+                        border: 1px solid #dddddd;
+                        border-radius: 5px;
+                        color: $black;
+                        font-family: "Calibri-Regular";
+                    }
+
+                    .card {
+                        background: transparent;
+                        width: 96%;
+                        margin: auto;
+
+                        .card-body {
+                            padding: 0 0 10px 0;
+                        }
+                    }
+
+                    .vs__actions {
+                        padding-right: 22px;
+
+                        .vs__open-indicator {
+                            fill: $mainColor;
+                        }
+                    }
+                    .vs__clear {
+                        margin-right: -22px;
+                    }
+
+                    .containercheck {
+                        margin: 30px 18px;
+                    }
+
+                    h3 {
+                        background: #787878 0% 0% no-repeat padding-box;
+                        border: 1px solid #dddddd;
+                        border-radius: 5px 5px 0px 0px;
+                        color: $white;
+                        font-size: 24px;
+                        margin-bottom: 12px;
+                        padding: 12px 18px 14px;
+                        font-family: "Calibri-Bold";
+                    }
+
+                    .containercheck input:checked ~ .red {
+                        background-color: $mainColor;
+                        border-radius: 5px;
+                        // z-index: 3;
+                    }
+                    .containercheck input:checked ~ .words span {
+                        color: $white;
+                    }
+
+                    .containercheck input:checked ~ .checkmark {
+                        background: $white;
+                    }
+
+                    .containercheck {
+                        .red {
+                            height: 45px;
+                            top: -8px;
+                            background: $white;
+                        }
+
+                        .checkmark {
+                            margin: 0;
+                            background: #c9c9c9;
+                        }
+                    }
+
+                    .words {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-inline-end: 16px;
+
+                        span {
+                            font-family: "Calibri-Regular";
+                            color: #000000;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .question__tab--question {
+                box-shadow: 0px 0px 24px #ff4d001a;
+                border-radius: 5px;
+                background-color: $white;
+                padding: 33px 28px;
+                text-align: center;
+                // margin-top: 100px;
+
+                &.tab_two {
+                    p {
+                        padding-bottom: 25px;
+                    }
+                }
+
+                h3 {
+                    font-size: 24px;
+                    color: $black;
+                    margin-bottom: 21px;
+                }
+                p {
+                    text-transform: capitalize;
+
+                    span {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+
+        .tab_three {
+            margin-top: 90px;
+            .mock-exam {
+                background: #f0f0f0;
+                border-radius: 5px;
+                padding: 25px;
+                border-left: 11px solid $mainColor;
+                overflow: hidden;
+                margin-bottom: 25px;
+                transition: 0.5s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $mainColor;
+                    border-left: 11px solid #343434;
+                    box-shadow: 0px 3px 26px #ff740054;
+                    color: #fff;
+
+                    h3,
+                    p {
+                        color: #fff;
+                    }
+                }
+
+                img {
+                    width: 166px;
+                    height: 144px;
+                    // opacity: 0.1;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                }
+                p {
+                    font-family: "Calibri-Regular";
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .top_box {
+        background: #787878 !important;
+        box-shadow: 0px 0px 24px #ff4d001a;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        // margin-top: 105px;
+        h4 {
+            color: #ffffff;
+            text-transform: capitalize;
+            font-size: 24px;
+            font-family: "Calibri-Bold";
+        }
+
+        p {
+            font-family: "Calibri-Light";
+            font-size: 16px;
+            color: #fff;
+        }
+        button {
+            font-size: 13px;
+            margin: 30px auto;
+
+            &:hover {
+                box-shadow: inset 20.5em 0 0 0 #fff;
+            }
+        }
+    }
+}
+
+// ============= end mcqRevision ==============

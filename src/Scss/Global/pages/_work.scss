@@ -1,0 +1,45 @@
+// ============= start work ========
+.work {
+  margin-top: 80px;
+
+  .content {
+    h5 {
+    }
+    p {
+      color: #1d1d1d;
+      font-size: 32px;
+      font-family: "Poppins-Regular";
+    }
+  }
+
+  .work__box {
+    gap: 20px;
+    transition: 0.5s;
+    margin-bottom: 53px;
+    background-color: transparent;
+    flex-direction: column;
+
+    img {
+      width: 124px;
+      height: 132px;
+    }
+
+    h6 {
+      font-size: 24px;
+      color: $secondColor;
+      font-family: "Poppins-SemiBold";
+    }
+
+    p {
+      color: $secondColor;
+      text-transform: lowercase;
+    }
+
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0px 10px 76px #0000001a;
+      border-radius: 5px;
+    }
+  }
+}
+// ============= end work ==========

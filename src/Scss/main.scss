@@ -1,0 +1,76 @@
+// start call sass pages
+
+@import "./Global/helpers/_variables.scss";
+
+@import "./Global/helpers/_mixins.scss";
+
+@import "./Global/helpers/_functions.scss";
+
+@import "./Global/layout/_grid.scss";
+
+@import "./Global/components/_buttons.scss";
+
+@import "./Global/components/_headings.scss";
+
+@import "./Global/pages/_globalPages.scss";
+
+// start layouts
+@import "./Global/layout/_navbar.scss";
+
+@import "./Global/layout/footer.scss";
+
+@import "./Global/layout/_header.scss";
+
+// end layouts
+
+// start pages
+
+@import "./Global/layout/_sidebar.scss";
+
+@import "./Global/pages/Topics";
+
+@import "./Global/pages/contact";
+
+@import "./Global/pages/About";
+
+@import "./Global/pages/work_us";
+
+@import "./Global/pages/work";
+
+@import "./Global/pages/score";
+
+@import "./Global/pages/packages";
+
+@import "./Global/pages/payment";
+
+@import "./Global/pages/profile";
+
+@import "./Global/pages/mcqRevision";
+
+@import "./Global/pages/resources";
+
+@import "./Global/pages/exams";
+
+@import "./Global/pages/correctExam";
+
+// start Auth
+
+@import "./Global/AuthScss/signup";
+
+// end Auth
+
+@import "./Global/pages/errorpage";
+
+@import "./Global/layout/_media.scss";
+
+// end pages
+
+// start global components
+
+@import "./Global/components/_spinner.scss";
+
+@import "./Global/components/_up-button.scss";
+
+// end global components
+
+// end call sass pages

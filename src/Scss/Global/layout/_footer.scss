@@ -1,0 +1,26 @@
+// ================ start footer ==================
+.Footer {
+  background: $secondBackground;
+  .footer__info {
+    flex-direction: column;
+    padding-bottom: 45px;
+    .image {
+      margin: 25px 0 15px 0;
+      width: 236px;
+      img {
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 40px;
+      margin-top: 15px;
+      li {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+// ================ end footer ====================

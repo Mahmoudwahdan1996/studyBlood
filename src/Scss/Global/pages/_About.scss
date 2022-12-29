@@ -1,0 +1,101 @@
+// ================= start about page ====================
+
+.about__us {
+  margin-top: 170px;
+
+  .all_row {
+    margin-bottom: 70px;
+  }
+
+  .about__info {
+    h3 {
+      margin-bottom: 32px;
+    }
+
+    p.desc {
+      p {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          left: -22px;
+          top: 9px;
+          width: 12px;
+          max-width: 12px;
+          min-width: 12px;
+          height: 12px;
+          background: #c2bebe;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .about-image {
+    transition: 0.5s;
+    height: 332px;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    img {
+      border: 1px solid #dddddd;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .last_content {
+    position: relative;
+    margin-bottom: 70px;
+
+    .ray {
+      position: absolute;
+      top: -230px;
+      right: 0;
+      width: 754px;
+      height: 652px;
+      z-index: -1;
+    }
+  }
+
+  .about_content {
+    // margin-bottom: 80px;
+    position: relative;
+
+    h4 {
+      margin-bottom: 32px;
+    }
+
+    ul {
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 8px;
+        margin-bottom: 17px;
+        span {
+          color: #343434;
+          &.dot {
+            width: 12px;
+            max-width: 12px;
+            min-width: 12px;
+            height: 12px;
+            background: #c2bebe;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ================= end about page ======================

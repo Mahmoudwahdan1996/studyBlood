@@ -1,0 +1,297 @@
+//========== start media =========
+@media (min-width: 1200px) {
+    .work .work__box {
+        padding: 34px 80px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+}
+
+@media (min-width: 992px) {
+    .hide_large {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .header .overlay .content p {
+        width: 100%;
+    }
+    .hide_sm_md {
+        display: none;
+    }
+    .hide_large {
+        display: block;
+    }
+    .mcqRevision .all_questions .question__tab .question__tab--question {
+        margin: 30px 0;
+    }
+
+    .profile .tabs .tab-content .box_info {
+        width: 100%;
+    }
+    .profile .tabs.row {
+        margin: auto;
+
+        .col-auto,
+        .tab-content {
+            width: 100%;
+            max-width: 100%;
+            flex: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            margin-inline-start: 0;
+        }
+    }
+    .profile .tabs .tab-content .table-responsive {
+        padding: 30px 15px;
+    }
+    .contact {
+        margin: 30px 0;
+    }
+    .about__us .all_row {
+        margin-bottom: 30px;
+    }
+    .packages .packages__payment .head {
+        margin-top: 30px;
+    }
+    .about__us {
+        margin-top: 70px;
+
+        .about__info {
+            margin-bottom: 30px;
+        }
+    }
+    .topics {
+        margin: 30px 0;
+    }
+
+    .work .work__box {
+        padding: 34px 80px;
+    }
+
+    .work .work__box--info {
+        align-items: center;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .hide_md {
+        display: none;
+    }
+    .topics .topics__box .topics__box--info .box__btns button {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .examsPage .question_name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .examsPage .question_name p,
+    .examsPage .question_name .table-responsive {
+        width: 100%;
+    }
+
+    .mcqRevision .all_questions button.main--btn {
+        margin: auto;
+    }
+
+    .mcqRevision
+        .all_questions
+        .question__tab
+        .question__tab--categories
+        .info_checkboxes.half_width {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .packages .packages__payment form {
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .packages .all_row_package {
+        margin-bottom: 30px;
+    }
+
+    .packages .package__content h4 {
+        font-size: 25px;
+    }
+    .score .score_info {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .navbar .navbar__btns {
+        gap: 5px;
+
+        button {
+            height: 35px;
+        }
+    }
+
+    .header {
+        height: auto;
+    }
+    .header .overlay .content {
+        gap: 15px;
+        padding: 100px 10px;
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .topics h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 575px) {
+    .work .work__box {
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        h6 {
+            font-size: 20px;
+        }
+    }
+
+    .topics .topics__box .topics__box--info .box__btns a {
+        width: 100%;
+    }
+    .work .content {
+        margin-bottom: 30px;
+
+        h5 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .correct_exam .defects {
+        padding: 30px 10px;
+    }
+
+    .examsPage .question_name {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .resources .resouces__content .box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mcqRevision .all_questions .tab_three {
+        margin-top: 30px;
+    }
+
+    .mcqRevision .all_questions .tab_three .mock-exam {
+        padding: 10px;
+
+        h3 {
+            margin-bottom: 15px;
+        }
+    }
+
+    .mcqRevision .all_questions .tabs .nav-tabs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mcqRevision h2 {
+        font-size: 20px;
+    }
+
+    .profile .tabs .tab-content .box_info {
+        padding: 30px 15px;
+    }
+    .profile .tabs .tab-content .timed_test .head {
+        padding: 18px;
+        text-align: center;
+    }
+    .contact form {
+        padding: 30px 20px;
+    }
+
+    .payment .pay .form-group .images img {
+        width: 25px;
+        height: 15px;
+    }
+    .payment .payment__package {
+        padding: 30px 10px;
+    }
+
+    .Signup.passCode .pass_numbers {
+        gap: 8px;
+        .num {
+            width: 40px;
+            height: 38px;
+        }
+    }
+
+    .work .work_content_head h4 {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .work .work_list h4 {
+        font-size: 25px;
+        margin: 30px 0 20px;
+    }
+
+    .Signup.forget_password .signup__box {
+        margin: 70px 0;
+    }
+
+    .Signup .signup__box form .form_head h4 {
+        font-size: 20px;
+    }
+
+    .about__us .about_content h4 {
+        font-size: 28px;
+    }
+    .Signup .signup__box {
+        padding: 30px 10px;
+    }
+
+    .work .work__box--info {
+        h3 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .work .work__box {
+        padding: 30px 15px;
+
+        h3 {
+            font-size: 19px;
+        }
+    }
+
+    .topics .topics__box .topics__box--info .box__btns {
+        flex-wrap: wrap;
+    }
+
+    .Footer .footer__info ul {
+        gap: 10px;
+    }
+
+    .hide_sm {
+        display: none;
+    }
+}
+//========== end media ===========

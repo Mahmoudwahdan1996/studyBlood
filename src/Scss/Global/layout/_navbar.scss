@@ -1,0 +1,55 @@
+//========== start navbar =========
+.navbar {
+    padding: 5px 0;
+    background: #fdf6f0 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 24px #ff4d001a;
+
+    .navbar__btns {
+        gap: 20px;
+        button {
+            //   width: 102px;
+            //   max-width: 102px;
+        }
+    }
+
+    .navbar__links {
+        ul {
+            display: flex;
+            gap: 50px;
+            li {
+                a {
+                    color: $black;
+                    font-size: 18px;
+                    font-family: "Calibri-Regular";
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: $mainColor;
+                    }
+
+                    .house__icon {
+                        width: 25px;
+                        height: 25px;
+                        color: #ff4d00;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar__logo {
+        img {
+            mix-blend-mode: multiply;
+        }
+    }
+
+    .side_bar_content {
+        button {
+            width: auto;
+        }
+    }
+}
+.router-link-exact-active.router-link-active a {
+    color: $mainColor !important;
+}
+//========== end navbar ===========
